@@ -37,7 +37,7 @@ To run this project locally, follow these steps:
 
 ## Usage
 
-- Visit the live site: [Uifry]("[https://www.uifry.com](https://batch-website.onrender.com/)")
+- Visit the live site: [Uifry]([https://batch-website.onrender.com/])
 - Explore the features and pricing plans.
 - Sign up for an account to access premium features.
 
