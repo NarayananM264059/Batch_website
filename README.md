@@ -1,7 +1,5 @@
 # Batch_website
-Certainly! Here's a basic template for a README file you can use for your GitHub repository:
 
----
 
 # Uifry
 
