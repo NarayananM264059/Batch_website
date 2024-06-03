@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uifry - App Landing Page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        .dark-mode {
+            --bg-color: #1a202c;
+            --text-color: #cbd5e0;
+            --secondary-text-color: #a0aec0;
+            --border-color: #2d3748;
+        }
+        .light-mode {
+            --bg-color: #ffffff;
+            --text-color: #1a202c;
+            --secondary-text-color: #4a5568;
+            --border-color: #e2e8f0;
+        }
+    </style>
+</head>
+<body class="light-mode bg-var(--bg-color) text-var(--text-color) font-roboto transition duration-500">
+    <header class="bg-white dark:bg-gray-900 shadow-md">
+        <nav class="container mx-auto flex justify-between items-center py-4 px-6">
+            <div class="text-2xl font-bold">Uifry</div>
+            <ul class="hidden md:flex space-x-6">
+                <li><a href="#home" class="text-gray-700 dark:text-gray-300 hover:text-orange-500 dark:hover:text-orange-500">Home</a></li>
+                <li><a href="#about" class="text-gray-700 dark:text-gray-300 hover:text-orange-500 dark:hover:text-orange-500">About Us</a></li>
+                <li><a href="#pricing" class="text-gray-700 dark:text-gray-300 hover:text-orange-500 dark:hover:text-orange-500">Pricing</a></li>
+                <li><a href="#features" class="text-gray-700 dark:text-gray-300 hover:text-orange-500 dark:hover:text-orange-500">Features</a></li>
+            </ul>
+            <div class="flex items-center space-x-4">
+                <a href="#" class="bg-orange-500 text-white px-4 py-2 rounded-md">Download</a>
+                <button id="dark-mode-toggle" class="bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-200 px-2 py-2 rounded-md">
+                    <svg id="theme-icon" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m8.66-8.66h-1m-14.14 0H3m15.66-5.66l-.707-.707M5.05 5.05l-.707.707M18.36 18.36l-.707.707M5.05 18.36l-.707-.707"></path>
+                    </svg>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <section id="hero" class="bg-gradient-to-r from-white to-gray-100 dark:from-gray-900 dark:to-gray-800 py-16 flex flex-col md:flex-row items-center container mx-auto px-6">
+        <div class="text-center md:text-left md:w-1/2">
+            <h1 class="text-4xl font-bold mb-4">Make The Best Financial Decisions</h1>
+            <p class="text-lg text-gray-700 dark:text-gray-300 mb-6">With Uifry, manage your finances efficiently and effortlessly.</p>
+            <div class="space-x-4">
+                <a href="#" class="bg-orange-500 text-white px-6 py-2 rounded-md hover:bg-orange-600">Get Started</a>
+                <a href="#" class="border border-orange-500 text-orange-500 px-6 py-2 rounded-md hover:bg-orange-500 hover:text-white">Watch Video</a>
+            </div>
+        </div>
+        <div class="md:w-1/2 mt-8 md:mt-0">
+            <img src="path-to-your-hero-image.jpg" alt="App Screenshot" class="mx-auto">
+        </div>
+    </section>
+
+    <section id="features" class="py-16 bg-white dark:bg-gray-900 text-center">
+        <h2 class="text-3xl font-bold mb-8">Features</h2>
+        <div class="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 px-6">
+            <div class="feature bg-gray-100 dark:bg-gray-800 p-6 rounded-md shadow-md">
+                <h3 class="text-xl font-semibold mb-4">Budgeting Intervals</h3>
+                <p class="text-gray-700 dark:text-gray-300">Manage your budget with custom intervals.</p>
+            </div>
+            <div class="feature bg-gray-100 dark:bg-gray-800 p-6 rounded-md shadow-md">
+                <h3 class="text-xl font-semibold mb-4">Automated Reports</h3>
+                <p class="text-gray-700 dark:text-gray-300">Receive automated reports on your spending habits.</p>
+            </div>
+            <div class="feature bg-gray-100 dark:bg-gray-800 p-6 rounded-md shadow-md">
+                <h3 class="text-xl font-semibold mb-4">Multi-Platform Support</h3>
+                <p class="text-gray-700 dark:text-gray-300">Access your financial data on multiple platforms.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="screenshots" class="py-16 bg-gray-100 dark:bg-gray-800 text-center">
+        <h2 class="text-3xl font-bold mb-8">Screenshots</h2>
+        <div class="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 px-6">
+            <div class="screenshot bg-white dark:bg-gray-900 p-6 rounded-md shadow-md">
+                <img src="path-to-screenshot1.jpg" alt="Screenshot 1" class="w-full h-auto">
+            </div>
+            <div class="screenshot bg-white dark:bg-gray-900 p-6 rounded-md shadow-md">
+                <img src="path-to-screenshot2.jpg" alt="Screenshot 2" class="w-full h-auto">
+            </div>
+            <div class="screenshot bg-white dark:bg-gray-900 p-6 rounded-md shadow-md">
+                <img src="path-to-screenshot3.jpg" alt="Screenshot 3" class="w-full h-auto">
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonials" class="py-16 bg-white dark:bg-gray-900 text-center">
+        <h2 class="text-3xl font-bold mb-8">What Our Users Say</h2>
+        <div class="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 px-6">
+            <div class="testimonial bg-gray-100 dark:bg-gray-800 p-6 rounded-md shadow-md">
+                <p class="text-gray-700 dark:text-gray-300 mb-4">"Uifry has completely transformed my financial management!"</p>
+                <span class="font-semibold">- User Name</span>
+            </div>
+            <div class="testimonial bg-gray-100 dark:bg-gray-800 p-6 rounded-md shadow-md">
+                <p class="text-gray-700 dark:text-gray-300 mb-4">"The best app for budgeting and tracking expenses!"</p>
+                <span class="font-semibold">- Another User</span>
+            </div>
+            <div class="testimonial bg-gray-100 dark:bg-gray-800 p-6 rounded-md shadow-md">
+                <p class="text-gray-700 dark:text-gray-300 mb-4">"Highly recommend Uifry for anyone looking to improve their financial health."</p>
+                <span class="font-semibold">- Yet Another User</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="pricing" class="py-16 bg-gray-100 dark:bg-gray-800 text-center">
+        <h2 class="text-3xl font-bold mb-8">Pricing Plans</h2>
+        <div class="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 px-6">
+            <div class="pricing-plan bg-white dark:bg-gray-900 p-6 rounded-md shadow-md">
+                <h3 class="text-xl font-semibold mb-4">Basic Plan</h3>
+                <p class="text-gray-700 dark:text-gray-300 mb-4">$9.99/month</p>
+                <a href="#" class="bg-orange-500 text-white px-6 py-2 rounded-md hover:bg-orange-600">Choose Plan</a>
+            </div>
+            <div class="pricing-plan bg-white dark:bg-gray-900 p-6 rounded-md shadow-md">
+                <h3 class="text-xl font-semibold mb-4">Standard Plan</h3>
+                <p class="text-gray-700 dark:text-gray-300 mb-4">$19.99/month</p>
+                <a href="#" class="bg-orange-500 text-white px-6 py-2 rounded-md hover:bg-orange-600">Choose Plan</a>
+            </div>
+            <div class="pricing-plan bg-white dark:bg-gray-900 p-6 rounded-md shadow-md">
+                <h3 class="text-xl font-semibold mb-4">Premium Plan</h3>
+                <p class="text-gray-700 dark:text-gray-300 mb-4">$29.99/month</p>
+                <a href="#" class="bg-orange-500 text-white px-6 py-2 rounded-md hover:bg-orange-600">Choose Plan</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-16 bg-white dark:bg-gray-900 text-center">
+        <h2 class="text-3xl font-bold mb-8">Contact Us</h2>
+        <div class="container mx-auto px-6">
+            <form action="#" method="POST" class="bg-gray-100 dark:bg-gray-800 p-6 rounded-md shadow-md">
+                <div class="mb-4">
+                    <input type="text" name="name" placeholder="Your Name" class="w-full p-2 rounded-md border border-gray-300 dark:border-gray-600">
+                </div>
+                <div class="mb-4">
+                    <input type="email" name="email" placeholder="Your Email" class="w-full p-2 rounded-md border border-gray-300 dark:border-gray-600">
+                </div>
+                <div class="mb-4">
+                    <textarea name="message" placeholder="Your Message" class="w-full p-2 rounded-md border border-gray-300 dark:border-gray-600"></textarea>
+                </div>
+                <button type="submit" class="bg-orange-500 text-white px-6 py-2 rounded-md hover:bg-orange-600">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="py-6 bg-gray-200 dark:bg-gray-800 text-center">
+        <p class="text-gray-700 dark:text-gray-300">&copy; 2024 Uifry. All rights reserved.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
