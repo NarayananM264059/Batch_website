@@ -67,7 +67,12 @@ body {
   line-height: inherit;
   /* 2 */
 }
-
+body {
+  background: linear-gradient(45deg, #FFFFFF 50%, #FF0000 50%);
+}
+header {
+  background: linear-gradient(45deg, #FFFFFF 50%, #FF0000 50%);
+}
 /*
 1. Add the correct height in Firefox.
 2. Correct the inheritance of border color in Firefox. (https://bugzilla.mozilla.org/show_bug.cgi?id=190655)
@@ -904,6 +909,7 @@ video {
   color: rgb(249 115 22 / var(--tw-text-opacity));
 }
 
+
 @media (min-width: 768px) {
   .md\:mt-0 {
     margin-top: 0px;
@@ -928,4 +934,20 @@ video {
   .md\:text-left {
     text-align: left;
   }
+}
+
+#pricing .flex {
+  flex-wrap: nowrap; /* Prevent wrapping to new lines */
+}
+.pricing-plan {
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for the hover effect */
+}
+
+.pricing-plan:hover {
+  transform: scale(1.05); /* Scale up the size of the box on hover */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Add a shadow effect on hover */
+}
+
+footer {
+  background: linear-gradient(45deg, #FFFFFF 50%, #FF0000 50%);
 }
